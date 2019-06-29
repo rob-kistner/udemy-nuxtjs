@@ -1,13 +1,17 @@
 <template>
   <div>
     <Header />
+    <header>
+      <h1>
+        Users Section
+      </h1>
+    </header>
     <nuxt />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header'
-
+import Header from '~/components/Header'
 export default {
   components: {
     Header
@@ -16,5 +20,4 @@ export default {
 </script>
 
 <style lang="scss">
-  
 </style>

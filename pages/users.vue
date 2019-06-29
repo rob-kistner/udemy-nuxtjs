@@ -1,7 +1,5 @@
 <template>
   <div>
-    <p>This is parent page content…</p>
-    <nuxt-link to="/">Home</nuxt-link>
     <input type="text" v-model="userId">
     <button @click="onLoadUser">Load User</button>
     <nuxt-child />
@@ -10,6 +8,7 @@
 
 <script>
 export default {
+  layout: 'users',
   data() {
     return {
       userId: ''
@@ -23,6 +22,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 
 </style>

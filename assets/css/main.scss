@@ -1,0 +1,35 @@
+$font-family: 'Helvetica Neue', sans-serif;
+$trans: all 0.2s;
+html, body {
+  margin: 0;
+}
+body {
+  font-family: $font-family;
+  font-weight: 300;
+}
+
+button {
+  padding: 0.5rem 0.625rem;
+  background: none;
+  border: solid 1px #666;
+  font-size: 0.9rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: $trans;
+  
+  &:hover {
+    background-color: #ddd;
+    transition: $trans;
+  }
+}
+
+input {
+  padding: 0.5rem 0.5rem;
+  font-size: 0.9rem;
+  transition: $trans;
+  
+  &:hover {
+    border-color: red;
+    transition: $trans;
+  }
+}
